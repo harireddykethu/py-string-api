@@ -1,21 +1,10 @@
-sentence = 'The quick brown fox jumps over the lazy dog'
+sentence = 'The name that can be named is not the eternal name'
 
-# string.split() by default splits the string at spaces
-# original string remains as such
-# result of split is a list of substrings
-# split character will be discarded
+# Syntax: https://docs.python.org/3.8/library/stdtypes.html#str.replace
 
-words = sentence.split()
+new_sentence = sentence.replace('name', 'NAME')
 
-print(f'Words: {words}')
-print(f'Type of words: {type(words)}')
+new_sentence_with_limit = sentence.replace('name', 'NAME', 1)
 
-underscore_separated_tokens = 'ABC_123456_MX415_%_4587+/_09$#@'
-
-tokens = underscore_separated_tokens.split('_')
-print(f'Tokens: {tokens}')
-
-# if maxsplit is specified, the split is limited to maxsplit
-long_string = 'this is a really long sentence here'
-limited_words = long_string.split(maxsplit=2)
-print(f'Only 2 words: {limited_words}')
+print(f'After complete replacement: {new_sentence}')
+print(f'After 1 replacement: {new_sentence_with_limit}')
