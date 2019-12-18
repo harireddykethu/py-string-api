@@ -15,6 +15,7 @@ underscore_separated_tokens = 'ABC_123456_MX415_%_4587+/_09$#@'
 tokens = underscore_separated_tokens.split('_')
 print(f'Tokens: {tokens}')
 
+# if maxsplit is specified, the split is limited to maxsplit
 long_string = 'this is a really long sentence here'
 limited_words = long_string.split(maxsplit=2)
 print(f'Only 2 words: {limited_words}')
